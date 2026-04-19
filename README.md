@@ -8,7 +8,7 @@ The system uses a custom-trained YOLOv11 AI model to detect components via a web
 
 * **`ElectroCom61_YOLO11.ipynb`**: Google Colab Jupyter Notebook used to train the YOLO model on a custom dataset.
 * **`2_Camera_Calibration/`**: Contains the Python script (`Once_calibration.py`) and matrix (`fisheye_calibration.npz`) used to un-distort the fisheye webcam lens using a checkerboard pattern.
-* **`3_Main_Python_Controller/`**: Contains the main execution script (`brain2.py`) which runs the live YOLO inference and communicates with the Arduino over serial. Includes the trained model weights (`best_YOLOv11m.pt`).
+* **`3_Main_Python_Controller/`**: Contains the main execution script (`brain2.py`) which runs the live YOLO inference and communicates with the Arduino over serial. The YOLO weights were too large for GitHub.
 * **`4_finalarduinocode/`**: Contains the C++ script (`robot_controller.ino`) that calculates dynamic Inverse Kinematics and smoothly drives the 6 servos.
 
 ## How to Run
